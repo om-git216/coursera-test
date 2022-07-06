@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu Website</title>
+	<link rel="stylesheet" type="text/css" href="style-assignment.css">
+	<style type="text/css">
 
+	* {
+		box-sizing: border-box;
+	}
+		
+	section {
+		background-color: gray;
+		border-color: black;
+		border-style: solid;
+		margin: 10px;
+	}
+
+	#p1 {
+		/* this is for the titles */
+		height: 30px;
+		width: 200px;
+		text-align: center;
+		position: relative;
+		right: 0px;
+		top: 0px;
+		border-style: solid;
+		border-color: black;
+		float: right;
+		margin: 0px;
+	}
+
+	#p2 {
+		clear: both;
+		padding: 10px;
+	}
+
+	/* desktop view */
+
+	@media (min-width: 992px) {
+		.col-lg-3 {
+			float: left;
+			width: 33.33%;
+		}
+	}
+
+	/* tablet view */
+	@media (min-width: 768px) and (max-width: 991px) {
+		.col-md-3 {
+			float: left;
+			width: 50%;
+		}
+	}
+
+
+	</style>
+</head>
+<body>
+
+<h1>Our Menu</h1>
+
+<section class="col-lg-3 col-md-3">
+	<p id="p1" style="background-color: pink; color: black;">Chicken</p>
+	<p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
+</section>
+
+<section class="col-lg-3 col-md-3">
+	<p id="p1" style="background-color: darkred; color: white;">Beef</p>
+	<p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
+</section>
+
+
+<section class="col-lg-3" style="clear: both;">
+	<p id="p1" style="background-color: yellowgreen; color: black;">Sushi</p>
+	<p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
+</section>
+
+</body>
+</html>
